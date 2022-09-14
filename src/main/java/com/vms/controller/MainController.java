@@ -46,5 +46,12 @@ public class MainController {
 	public String apply_job() {
 		return "apply-job";
 	}
-	
+	@GetMapping("/client")
+	public String client() {
+		return "client";
+	}
+	@GetMapping("/clientTable")
+	public String clientTable() {
+		return "clientTable";
+	}
 }
