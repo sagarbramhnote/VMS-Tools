@@ -22,6 +22,38 @@ public class MainController {
 	}
 	
 	
+	// Dashboard 
+	
+	@GetMapping("/jobs")
+	public String jobs() {
+		return "jobs-page";
+	}
+	
+	@GetMapping("/application")
+	public String application() {
+		return "application-page";
+	}
+	
+	@GetMapping("/profile")
+	public String profile() {
+		return "my-profile";
+	}
+	
+	@GetMapping("/statistics")
+	public String statistics() {
+		return "statistics-page";
+	}
+	
+	@GetMapping("/companies")
+	public String companies() {
+		return "companies";
+	}
+	
+	
+	
+
+	// job posting
+	
 	@GetMapping("/newjob")
 	public String newjob() {
 		return "new-job";
