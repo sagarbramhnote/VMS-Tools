@@ -59,6 +59,16 @@ public class MainController {
 		return "new-job";
 	}
 	
+	@GetMapping("/newperson")
+	public String newPerson() {
+		return "newperson";
+	}
+	
+	@GetMapping("/persontable")
+	public String personTable() {
+		return "persontable";
+	}
+	
 	@GetMapping("/joblist")
 	public String joblist() {
 		return "job-list";
