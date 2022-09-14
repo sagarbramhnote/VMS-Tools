@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="main::Layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>vendor|Profile</title>
+</head>
+<body>
+
+<section>
+<!--**********************************
+Content body start
+***********************************-->
+<div class="content-body">
+<!-- row -->
+<div class="container-fluid">
+<div class="d-flex align-items-center mb-4">
+<h4 class="fs-20 font-w600 mb-0 me-auto">Vendor Profile</h4>
+<div>
+<a href="javascript:void(0);" class="btn btn-secondary btn-sm me-3" > <i class="fas fa-envelope"></i></a>
+<a href="javascript:void(0);" class="btn btn-secondary btn-sm me-3" ><i class="fas fa-phone-alt"></i></a>
+<a href="javascript:void(0);" class="btn btn-primary btn-sm" ><i class="fas fa-info"></i></a>
+
+</div>
+</div>
+<div class="row">
+<div class="col-xl-12">
+<div class="card">
+<div class="card-header border-0 flex-wrap align-items-start">
+<div class="col-md-8">
+<div class="user d-sm-flex d-block pe-md-5 pe-0">
+<img src="images/user.jpg" alt="">
+<div class="ms-sm-3 ms-0 me-md-5 md-0">
+<h5 class="mb-1 font-w600"><a href="javascript:void(0);">Your name here</a></h5>
+<div class="listline-wrapper mb-2">
+<span class="item"><i class="far fa-envelope"></i>example@gmail.com</span>
+<span class="item"><i class="far fa-id-badge"></i>It Services</span>
+<span class="item"><i class="fas fa-map-marker-alt"></i>Indonesia</span>
+</div>
+<p>A data analyst collects, interprets and visualizes data to uncover insights. A data analyst assigns a numerical value to business functions so performance.</p>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-12 text-end">	
+<div class="mt-3">
+<h6 class="text-start">Complete your profile
+<span class="float-end">85%</span>
+</h6>
+<div class="progress ">
+<div class="progress-bar bg-danger progress-animated" style="width: 85%; height:6px;" role="progressbar">
+<span class="sr-only">60% Complete</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="card-body pt-0">
+<h4 class="fs-20">Description</h4>
+<div class="row">
+<div class="col-xl-6 col-md-6">
+<p class="font-w600 mb-2 d-flex"><span class="custom-label-2">Vendor Name : </span><span class="font-w400">Name here</span></p>
+<p class="font-w600 mb-2 d-flex"><span class="custom-label-2">Email : </span><span class="font-w400">email@gmail.com</span></p>
+<p class="font-w600 mb-2 d-flex"><span class="custom-label-2"> Phone : </span><span class="font-w400">9573606892</span></p>
+<p class="font-w600 mb-2 d-flex"><span class="custom-label-2">Primary contact person  : </span><span class="font-w400">name here	</span></p>
+<p class="font-w600 mb-2 d-flex"><span class="custom-label-2">Address  : </span><span class="font-w400">Abcd pvt Ltd</span></p>
+<p class="font-w600 mb-2 d-flex"><span class="custom-label-2">Country : </span><span class="font-w400">India</span></p>
+<p class="font-w600 mb-2 d-flex"><span class="custom-label-2">State:</span> <span class="font-w400">Telangana</span></p>
+<p class="font-w600 mb-2 d-flex"><span class="custom-label-2">City : </span><span class="font-w400">Warangal</span></p>
+</div>
+<div class="col-xl-6 col-md-6">
+<p class="font-w600 mb-2 d-flex"><span class="custom-label-2">Company Type :</span> <span class="font-w400">Pvt ltd</span></p>
+<p class="font-w600 mb-2 d-flex"><span class="custom-label-2">Alternative Email :</span> <span class="font-w400">email@gmail.com</span></p> 
+<p class="font-w600 mb-2 d-flex"><span class="custom-label-2">Alternative Phone : </span><span class="font-w400">9573606892</span></p><!-- 
+<p class="font-w600 mb-2 d-flex"><span class="custom-label-2">Industry :</span> <span class="font-w400">it Software/ Developer</span></p> -->
+<p class="font-w600 mb-2 d-flex"><span class="custom-label-2">Secondary contact person :</span> <span class="font-w400">details</span></p>
+<p class="font-w600 mb-2 d-flex"><span class="custom-label-2">Company Established (Year)  : </span><span class="font-w400">  1996</span></p>
+</div>
+</div>
+</div>
+<div class="card-footer d-flex flex-wrap justify-content-between">
+<div class="mb-md-2 mb-3">
+<span class="d-block mb-1"><i class="fas fa-circle me-2"></i>Some text here  <strong>Text here</strong></span>
+<span><i class="fas fa-circle me-2"></i>Some text here    <strong>Text here</strong></span>
+</div>
+<div>
+<a href="javascript:void(0);" class="btn btn-primary btn-md me-2  mb-2"><i class="fas fa-download me-2"></i>Download Profile</a>
+<a href="javascript:void(0);" class="btn btn-warning btn-md me-2 mb-2"><i class="fas fa-share-alt me-2"></i>Share Profile</a>
+<a href="javascript:void(0);" class="btn btn-info btn-md me-2 mb-2"><i class=" "></i>Edit</a>
+<a href="javascript:void(0);" class="btn btn-info btn-md me-2 mb-2"><i class="fas fa-phone-alt me-2"></i>Contact</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--**********************************
+Content body end
+***********************************-->
+
+
+
+<!--**********************************
+Scripts
+***********************************-->
+<!-- Required vendors -->
+<script src="./vendor/global/global.min.js"></script>
+<script src="./vendor/chart.js/Chart.bundle.min.js"></script>
+<script src="vendor/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+
+
+<!-- Apex Chart -->
+<script src="./vendor/apexchart/apexchart.js"></script>
+
+
+
+<!-- Chart piety plugin files -->
+<script src="./vendor/datatables/js/jquery.dataTables.min.js"></script>
+<script src="./js/plugins-init/datatables.init.js"></script>
+<script src="./vendor/bootstrap-datepicker-master/js/bootstrap-datepicker.min.js"></script>
+
+
+
+<script src="./js/custom.min.js"></script>
+<script src="./js/dlabnav-init.js"></script>
+<script src="./js/demo.js"></script>
+<script src="./js/styleSwitcher.js"></script>
+<script>
+$(".form_datetime").datepicker({format: 'yyyy-mm-dd'});
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+</script>  
+
+</section>
+
+</body>
+</html>

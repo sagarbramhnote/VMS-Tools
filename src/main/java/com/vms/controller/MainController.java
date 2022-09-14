@@ -10,73 +10,96 @@ public class MainController {
 	public String index() {
 		return "index";
 	}
-	
+
 	@GetMapping("/app_profile")
 	public String app_profile() {
 		return "app-profile";
 	}
-	
+
 	@GetMapping("/email_inbox")
 	public String email_inbox() {
 		return "email-inbox";
 	}
-	
-	
-	// Dashboard 
-	
+
+	// Dashboard
+
 	@GetMapping("/jobs")
 	public String jobs() {
 		return "jobs-page";
 	}
-	
+
 	@GetMapping("/application")
 	public String application() {
 		return "application-page";
 	}
-	
+
 	@GetMapping("/profile")
 	public String profile() {
 		return "my-profile";
 	}
-	
+
 	@GetMapping("/statistics")
 	public String statistics() {
 		return "statistics-page";
 	}
-	
+
 	@GetMapping("/companies")
 	public String companies() {
 		return "companies";
 	}
-	
-	
-	
 
 	// job posting
-	
+
 	@GetMapping("/newjob")
 	public String newjob() {
 		return "new-job";
 	}
-	
+
 	@GetMapping("/joblist")
 	public String joblist() {
 		return "job-list";
 	}
-	
+
 	@GetMapping("/jobview")
 	public String jobview() {
 		return "job-view";
 	}
-	
+
 	@GetMapping("/jobapplication")
 	public String job_application() {
 		return "job-application";
 	}
-	
+
 	@GetMapping("/applyjob")
 	public String apply_job() {
 		return "apply-job";
 	}
+
 	
+	
+	
+	// vendor pages starts
+		//vendorregistration
+		@GetMapping("/vendorregistration")
+		public String vendorRegistration() {
+			return "vendor-registration";
+		}
+	@GetMapping("/vendorcreation")
+	public String vendorCreation() {
+		return "vendor-creation";
+	}
+
+	// vendor profile view
+	@GetMapping("/vendorprofile")
+	public String vendorProfile() {
+		return "vendor-profiles";
+	}
+
+	// vendor tables
+	@GetMapping("/vendortables")
+	public String vendortables() {
+		return "vendor-tables";
+	}
+	
+	//vendors pages ends
 }
