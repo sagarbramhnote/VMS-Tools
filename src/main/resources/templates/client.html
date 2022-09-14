@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="main::Layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+</head>
+<body>
+
+<section>
+
+	<!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+            <!-- row -->
+			<div class="container-fluid">
+				<div class="d-flex align-items-center mb-4">
+					<h4 class="fs-20 font-w600 mb-0 me-auto">Client</h4>
+					<div>
+						<a href="javascript:void(0);" class="btn btn-secondary btn-sm me-3"> <i class="fas fa-envelope"></i></a>
+						<a href="javascript:void(0);" class="btn btn-secondary btn-sm me-3"><i class="fas fa-phone-alt"></i></a>
+						<a href="javascript:void(0);" class="btn btn-primary btn-sm"><i class="fas fa-info"></i></a>
+					
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xl-12">
+						<div class="card">
+							<div class="card-body">
+								<div class="row"><div class="col-xl-6  col-md-6 mb-4">
+									  <label  class="form-label font-w600">Client_Name<span class="text-danger scale5 ms-2">*</span></label>
+										<input type="text" class="form-control solid" placeholder="Enter Name" aria-label="name" required>
+									</div> 
+									  <div class="col-xl-6  col-md-6 mb-4">
+										<label  class="form-label font-w600">Email Id<span class="text-danger scale5 ms-2">*</span></label>
+										  <input type="email" class="form-control solid" placeholder="Enter Email" aria-label="name" required>
+									  </div>
+									  <div class="col-xl-6  col-md-6 mb-4">
+										<label  class="form-label font-w600">Phone No<span class="text-danger scale5 ms-2">*</span></label>
+										  <input type="number" class="form-control solid" placeholder="Enter Phone No" aria-label="name" required>
+									  </div>
+									  <div class="col-xl-6  col-md-6 mb-4">
+										<label  class="form-label font-w600">Address<span class="text-danger scale5 ms-2">*</span></label>
+										  <input type="textbox" class="form-control solid" placeholder="Enter Address" aria-label="name" required>
+									  </div>
+									<div class="col-xl-6  col-md-6 mb-4">
+									  <label  class="form-label font-w600">Countryid<span class="text-danger scale5 ms-2">*</span></label>
+										<input type="number" class="form-control solid" placeholder="Enter Countryid" aria-label="name">
+									</div>
+									<div class="col-xl-6  col-md-6 mb-4">
+										<label  class="form-label font-w600">Stateid<span class="text-danger scale5 ms-2">*</span></label>
+										  <input type="number" class="form-control solid" placeholder="Enter Stateid" aria-label="name">
+									  </div>
+									  <div class="col-xl-6  col-md-6 mb-4">
+										<label  class="form-label font-w600">Cityid<span class="text-danger scale5 ms-2">*</span></label>
+										  <input type="number" class="form-control solid" placeholder="Enter Cityid" aria-label="name">
+									  </div>
+									  <div class="col-xl-6  col-md-6 mb-4">
+										<label  class="form-label font-w600">Website<span class="text-danger scale5 ms-2">*</span></label>
+										  <input type="url" class="form-control solid" placeholder="website url" aria-label="name">
+									  </div>
+									  <div>
+									  <div class="col-xl-6  col-md-6 mb-4">
+									  <label  class="form-label font-w600">Logo<span class="text-danger scale5 ms-2">*</span></label>
+										<input type="file" class="form-control solid" placeholder="Upload Logo" aria-label="name" name="photo">
+									</div>
+									<div class="col-xl-12 mb-4">
+										<label  class="form-label font-w600">About Client<span class="text-danger scale5 ms-2">*</span></label>
+										<textarea class="form-control solid" aria-label="With textarea"></textarea>
+								  </div>
+										<span>Status:<label class="radio-inline mx-3"><input type="radio" name="optradio" required> Active</label></span>
+										<span><label class="radio-inline me-3"><input type="radio" name="optradio" required> In Active</label></span>
+									</div>
+									
+									</div>
+									
+								</div>
+							</div>
+							<div class="card-footer text-end">
+								
+								<div>
+									<a href="javascript:void(0);" class="btn btn-primary me-3">Close</a>
+									<a href="javascript:void(0);" class="btn btn-secondary">Submit</a>
+								</div> 
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </div>							
+</section>
+
+</body>
+</html>

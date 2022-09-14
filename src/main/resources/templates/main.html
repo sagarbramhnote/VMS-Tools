@@ -1023,4 +1023,159 @@ JobickCarousel();
 
 </body>
 
+=======
+ <ul aria-expanded="false">
+  <li><a href="vendor-creation.html">Vendor Creation</a></li>
+  <li><a href="job-view.html">Job View</a></li>
+  <li><a href="job-application.html">Job Application</a></li>
+  <li><a href="vendor-table.html">vendor Table</a></li>
+  <li><a href="new-job.html">New Job</a></li>
+ <li><a href="vendor-profile.html">Vendor Profile</a></li>
+ </ul>
+</li>
+<!--  vendor ends-->
+<!--  -->
+
+<!-- Client Creation -->
+<li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
+<i class="flaticon-093-waving"></i>
+<span class="nav-text">Client Creation</span>
+</a>
+<ul aria-expanded="false">
+<li><a href="#" th:href="@{/client}">Client</a></li>
+<li><a href="#" th:href="@{/clientTable}">Client Table</a></li>
+</ul>
+</li>
+
+
+<!--  Talent Bench  -->
+<li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
+<i class="flaticon-093-waving"></i>
+<span class="nav-text">Person</span>
+</a>
+<ul aria-expanded="false">
+<li><a th:href="@{/newperson}">New Person</a></li>
+<li><a th:href="@{/persontable}">Person Table</a></li>
+<!--  <li><a href="job-application.html">Job Application</a></li> -->
+</ul>
+</li>
+
+<!--  Internal Recruitment Process  -->
+<li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
+<i class="flaticon-093-waving"></i>
+<span class="nav-text">Internal Recruitment</span>
+</a>
+<ul aria-expanded="false">
+<li><a href="#">rttyu</a></li>
+<li><a href="#">hghgj</a></li>
+<li><a href="#">dgfgh</a></li>
+</ul>
+</li>
+
+
+
+</ul>
+
+
+<div class="copyright">
+<p><strong>Jobick Job Admin</strong> © 2022 All Rights Reserved</p>
+<p class="fs-12">Made with <span class="heart"></span> by Mentors</p>
+</div>
+</div>
+</div>
+<!--**********************************
+Sidebar end
+***********************************-->
+
+
+
+
+
+</div>
+<!--**********************************
+Main wrapper end
+***********************************-->
+
+
+<!-- content area -->
+  <div class="content mt-5">
+
+   <div th:replace="${content}"></div>
+  
+  </div>
+
+
+<!--**********************************
+Scripts
+***********************************-->
+<!-- Required vendors -->
+<script src="./vendor/global/global.min.js"></script>
+<script src="./vendor/chart.js/Chart.bundle.min.js"></script>
+<script src="vendor/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+
+<!-- Apex Chart -->
+<script src="./vendor/apexchart/apexchart.js"></script>
+
+<script src="./vendor/chart.js/Chart.bundle.min.js"></script>
+
+<!-- Chart piety plugin files -->
+<script src="./vendor/peity/jquery.peity.min.js"></script>
+
+<!-- Dashboard 1 -->
+<script src="./js/dashboard/dashboard-1.js"></script>
+
+<script src="./vendor/owl-carousel/owl.carousel.js"></script>
+
+<script src="./js/custom.min.js"></script>
+<script src="./js/dlabnav-init.js"></script>
+<script src="./js/demo.js"></script>
+<script src="./js/styleSwitcher.js"></script>
+<script>
+function JobickCarousel() {
+
+/*  testimonial one function by = owl.carousel.js */
+jQuery('.front-view-slider').owlCarousel({
+loop: false,
+margin: 30,
+nav: true,
+autoplaySpeed: 3000,
+navSpeed: 3000,
+autoWidth: true,
+paginationSpeed: 3000,
+slideSpeed: 3000,
+smartSpeed: 3000,
+autoplay: false,
+animateOut: 'fadeOut',
+dots: true,
+navText: ['', ''],
+responsive: {
+0: {
+items: 1
+},
+
+480: {
+items: 1
+},
+
+767: {
+items: 3
+},
+1750: {
+items: 3
+}
+}
+})
+}
+
+jQuery(window).on('load', function() {
+setTimeout(function() {
+JobickCarousel();
+}, 1000);
+});
+</script>
+
+
+
+</body>
+
 </html>

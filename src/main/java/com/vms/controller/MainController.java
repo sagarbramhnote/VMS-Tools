@@ -55,6 +55,17 @@ public class MainController {
 		return "new-job";
 	}
 
+	
+	@GetMapping("/newperson")
+	public String newPerson() {
+		return "newperson";
+	}
+	
+	@GetMapping("/persontable")
+	public String personTable() {
+		return "persontable";
+	}
+	
 	@GetMapping("/joblist")
 	public String joblist() {
 		return "job-list";
@@ -78,7 +89,7 @@ public class MainController {
 	
 	
 	
-	// vendor pages starts
+
 		//vendorregistration
 		@GetMapping("/vendorregistration")
 		public String vendorRegistration() {
@@ -101,5 +112,14 @@ public class MainController {
 		return "vendor-tables";
 	}
 	
-	//vendors pages ends
+
+	@GetMapping("/client")
+	public String client() {
+		return "client";
+	}
+	@GetMapping("/clientTable")
+	public String clientTable() {
+		return "clientTable";
+	}
+
 }
