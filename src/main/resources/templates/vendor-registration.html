@@ -1,346 +1,152 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="main::Layout(~{::section})">
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+	<meta charset="ISO-8859-1">
+	<title>Vendor| Creation</title>
 
 </head>
 <body>
 
-<section>
-
-
+	<section>
+ <div class="row page-titles">
+<ol class="breadcrumb">
+<li class="breadcrumb-item active"><a href="javascript:void(0)">Vendor</a></li>
+<li class="breadcrumb-item"><a href="javascript:void(0)">Table</a></li>
+</ol>
+</div>
 
 <!--**********************************
 Content body start
 ***********************************-->
 <div class="content-body">
-<div class="container-fluid">
-<div class="row page-titles">
-<ol class="breadcrumb">
+	<!-- row -->
+	<div class="container-fluid">
+	<ol class="breadcrumb">
 <li class="breadcrumb-item active"><a href="javascript:void(0)">Vendor</a></li>
-<li class="breadcrumb-item"><a href="javascript:void(0)">Register</a></li>
+<li class="breadcrumb-item"><a href="javascript:void(0)">Vendor Creartion</a></li>
 </ol>
-</div>
-<!-- row -->
-<div class="row">
-<div class="col-lg-12">
-<div class="card">
-<div class="card-header">
-<h4 class="card-title">Vendor Creation</h4>
-</div>
-<div class="card-body">
-<div class="form-validation">
-<form class="needs-validation" novalidate >
-<div class="row">
-<div class="col-xl-6">
-<div class="mb-3 row">
-<label class="col-lg-4 col-form-label" for="validationCustom01">Vendor name
-<span class="text-danger">*</span>
-</label>
-<div class="col-lg-6">
-<input type="text" class="form-control" id="validationCustom01"  placeholder="Enter a vendor name" required>
-<div class="invalid-feedback">
-Please enter a vendor name.
-</div>
-</div>
-</div>
-<div class="mb-3 row">
-<label class="col-lg-4 col-form-label" for="validationCustom02">Email <span
-class="text-danger">*</span>
-</label>
-<div class="col-lg-6">
-<input type="text" class="form-control" id="validationCustom02"  placeholder="Your valid email" required>
-<div class="invalid-feedback">
-Please enter a Email.
-</div>
-</div>
-</div>
-<!-- phono -->
+		<div class="d-flex align-items-center mb-4">
+		
+			<h4 class="fs-20 font-w600 mb-0 me-auto"> </h4>
+			<div>
+				<a href="javascript:void(0);" class="btn btn-secondary btn-sm me-3"> <i class="fas fa-envelope"></i></a>
+				<a href="javascript:void(0);" class="btn btn-secondary btn-sm me-3"><i class="fas fa-phone-alt"></i></a>
+				<a href="javascript:void(0);" class="btn btn-primary btn-sm"><i class="fas fa-info"></i></a>
 
-<div class="mb-3 row">
-<label class="col-lg-4 col-form-label" for="validationCustom08">Phone (India)
-<span class="text-danger">*</span>
-</label>
-<div class="col-lg-6">
-<input type="text" class="form-control" id="validationCustom08" placeholder="+91" required>
-<div class="invalid-feedback">
-Please enter a phone no.
-</div>
-</div>
-</div> 
-<div class="mb-3 row">
-<label class="col-lg-4 col-form-label" for="validationCustom04">About <span
-class="text-danger">*</span>
-</label>
-<div class="col-lg-6">
-<textarea class="form-control" id="validationCustom04"  rows="5" placeholder="What would you like to Say?" required></textarea>
-<div class="invalid-feedback">
-Please enter a about.
-</div>
-</div>
-</div>
-</div>
-<!-- about -->
-
-<!--  about -->
-<div class="col-xl-6">
-<div class="mb-3 row">
-<label class="col-lg-4 col-form-label" for="validationCustom05">Company Type
-<span class="text-danger">*</span>
-</label>
-<div class="col-lg-6">
-<select class="default-select wide form-control" id="validationCustom05">
-<option  data-display="Select">Please select</option>
-<option value="Private limited company">Private limited company </option>
-<option value="Public limited company">Public limited company</option> 
-</select>
-<div class="invalid-feedback">
-Please select a one.
-</div>
-</div>
-</div>
-<div class="mb-3 row">
-<label class="col-lg-4 col-form-label" for="validationCustom06">Location
-<span class="text-danger">*</span>
-</label>
-<div class="col-lg-6">
-<input type="text" class="form-control" id="validationCustom06" placeholder="http://maps.com" required>
-<div class="invalid-feedback">
-Please enter a location.
-</div>
-</div>
-</div>
-<div class="mb-3 row">
-<label class="col-lg-4 col-form-label" for="validationCustom07">Website
-<span class="text-danger">*</span>
-</label>
-<div class="col-lg-6">
-<input type="text" class="form-control" id="validationCustom07"  placeholder="http://example.com" required>
-<div class="invalid-feedback">
-Please enter a url.
-</div>
-</div>
-</div>
-<div class="mb-3 row">
-<label class="col-lg-4 col-form-label" for="validationCustom08">	Company Established   (Year)
-<span class="text-danger">*</span>
-</label>
-<div class="col-lg-6">
-<input type="text" class="form-control" id="validationCustom08" placeholder="1996" required>
-<div class="invalid-feedback">
-Please enter a phone no.
-</div>
-</div>
-</div>
-<!-- upload logo -->
-
-
-
-<div class="mb-3 row">
-<label class="col-lg-4 col-form-label" for="validationCustom08">	Upload   (Logo)
-<span class="text-danger">*</span>
-</label>
-<div class="col-lg-6">
-<input type="file" class="form-file-input form-control" placeholder="1996" required>
-<div class="invalid-feedback">
-Please enter a phone no.
-</div>
-</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xl-12">
+				<div class="card">
+					<div class="card-body">
+						<div class="row">
+							<div class="col-xl-6  col-md-6 mb-4">
+								<label  class="form-label font-w600">Name<span class="text-danger scale5 ms-2">*</span></label>
+								<input type="text" class="form-control solid" placeholder="Enter a vendor name" aria-label="name" name="personName" required>
+							</div>
+							<div class="col-xl-6  col-md-6 mb-4">
+								<label  class="form-label font-w600">Email<span class="text-danger scale5 ms-2">*</span></label>
+								<input type="email" class="form-control solid" placeholder="Your valid email" aria-label="email" name="email" required>
+							</div>
+							<div class="col-xl-6  col-md-6 mb-4">
+								<label  class="form-label font-w600">Phone(India)<span class="text-danger scale5 ms-2">*</span></label>
+								<input type="tel" class="form-control solid" placeholder=" +91 " aria-label="name" name="phoneNo" maxlength="10" required>
+							</div>
+							<div class="col-xl-6  col-md-6 mb-4">
+								<label  class="form-label font-w600">Company Type<span class="text-danger scale5 ms-2">*</span></label>
+								<select  class="form-select form-control solid" name=roleId required >
+									<option selected>Please select</option>
+									<option value="R001">Private limited company</option>
+									<option value="R002">Public limited company</option>
+									 
+								</select>
+							</div>
+							<div class="col-xl-6  col-md-6 mb-4">
+								<label  class="form-label font-w600">Country<span class="text-danger scale5 ms-2">*</span></label>
+								<select  class="form-select form-control solid" name=country required >
+									<option selected>Please select</option>
+									<option value="india">India</option>
+									<option value="us">US</option>
+									 
+								</select>
+							</div>
+							<div class="col-xl-6  col-md-6 mb-4">
+								<label  class="form-label font-w600">State<span class="text-danger scale5 ms-2">*</span></label>
+								<select  class="form-select form-control solid" name="state" required >
+									<option selected>Please select</option>
+									<option value="TS">Telangana</option>
+									<option value="Ap">AP</option>
+									 
+								</select>
+							</div>
+							<div class="col-xl-6  col-md-6 mb-4">
+								<label  class="form-label font-w600">City<span class="text-danger scale5 ms-2">*</span></label>
+								<select  class="form-select form-control solid" name="city" required >
+									<option selected>Please select</option>
+									<option value="hyd">Hyderabad</option>
+									<option value="wgl">Warangal</option>
+									 
+								</select>
+							</div>							
+							<div class="col-xl-6  col-md-6 mb-4">
+								<label  class="form-label font-w600">Company Established (Year)<span class="text-danger scale5 ms-2">*</span></label>
+								<input type="text" class="form-control solid" placeholder=" year" aria-label="name" required>
+							</div>
+							<div class="col-xl-6  col-md-6 mb-4">
+								<label  class="form-label font-w600">Address<span class="text-danger scale5 ms-2">*</span></label>
+								<input type="text" class="form-control solid" placeholder="Address" aria-label="address" required>
+							</div>
+							<div class="col-xl-6  col-md-6 mb-4">
+								<label  class="form-label font-w600">Website<span class="text-danger scale5 ms-2">*</span></label>
+								<input type="text" class="form-control solid" placeholder="http://example.com" aria-label="name" required>
+							</div>
+							<div class="col-xl-6  col-md-6 mb-4">
+								<label  class="form-label font-w600">Location<span class="text-danger scale5 ms-2">*</span></label>
+								<input type="text" class="form-control solid" placeholder="http://maps.com" aria-label="location" required>
+							</div>
+							<div class="col-xl-6  col-md-6 mb-4">
+								<label  class="form-label font-w600">Zipcode<span class="text-danger scale5 ms-2">*</span></label>
+								<input type="text" class="form-control solid" placeholder="506344" aria-label="Zipcode" name="Zipcode" required>
+							</div>
+							 <div class="col-xl-6  col-md-6 mb-4">
+								<label  class="form-label font-w600">Alternative email<span class="text-danger scale5 ms-2">*</span></label>
+								<input type="email" class="form-control solid" placeholder="enter your email" aria-label="email" name="email" required>
+							</div>
+							<div class="col-xl-6  col-md-6 mb-4">
+								<label  class="form-label font-w600">Alternative phone (India)<span class="text-danger scale5 ms-2">*</span></label>
+								<input type="tel" class="form-control solid" placeholder="+91" aria-label="phno" name="phoneNo" maxlength="10" required>
+							</div>
+							<div class="col-xl-6  col-md-6 mb-4">
+								<label  class="form-label font-w600">Primary contact person<span class="text-danger scale5 ms-2">*</span></label>
+								<input type="tel" class="form-control solid" placeholder="Primary contact person" aria-label="Primary contact person" name="Primary contact person" maxlength="10" required>
+							</div>
+							<div class="col-xl-6  col-md-6 mb-4">
+								<label  class="form-label font-w600">Secondary contact person<span class="text-danger scale5 ms-2">*</span></label>
+								<input type="tel" class="form-control solid" placeholder="Secondary contact person" aria-label="Secondary contact person" name="Secondary contact person" maxlength="10" required>
+							</div>
+							<div class="col-xl-6  col-md-6 mb-4">
+								<label  class="form-label font-w600">About<span class="text-danger scale5 ms-2">*</span></label>
+								<input type="text" class="form-control solid" placeholder="What would you like to Say?" aria-label="about" name="about" maxlength="10" required>
+							</div>
+							
+							<div class="col-xl-6  col-md-6 mb-4">
+								<label  class="form-label font-w600">Upload Logo<span class="text-danger scale5 ms-2"></span></label>
+								<input type="file" class="form-control solid" placeholder="Upload Photo" aria-label="name" name="photo">
+							</div>
+						</div>
+					</div>
+					<div class="card-footer text-end">
+						<div>
+							<a href="javascript:void(0);" class="btn btn-primary me-3">Close</a>
+							<a href="javascript:void(0);" class="btn btn-secondary">Submit</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
- 
-
-<!-- upload logo -->
-
-<!-- alterantine persons details 1start -->
-
-<div class="mb-3 row">
-<label class="col-lg-4 col-form-label" for="validationCustom02">Primary contact person <span
-class="text-danger">*</span>
-</label>
-<div class="col-lg-6">
-<input type="text" class="form-control" id="validationCustom02"  placeholder="Your valid email" required>
-<div class="invalid-feedback">
-Please enter a details.
-</div>
-</div>
-</div>
-<!-- 1 -->
-
-<div class="mb-3 row">
-<label class="col-lg-4 col-form-label" for="validationCustom02">Secondary contact person <span
-class="text-danger">*</span>
-</label>
-<div class="col-lg-6">
-<input type="text" class="form-control" id="validationCustom02"  placeholder="Your valid email" required>
-<div class="invalid-feedback">
-Please enter a details.
-</div>
-</div>
-</div>
-<!-- alterantine persons details end1 -->
-<!-- alr phn email -->
-
-<div class="mb-3 row">
-<label class="col-lg-4 col-form-label" for="validationCustom02"> Alternative email <span
-class="text-danger">*</span>
-</label>
-<div class="col-lg-6">
-<input type="text" class="form-control" id="validationCustom02"  placeholder="Your valid email" required>
-<div class="invalid-feedback">
-Please enter a Email.
-</div>
-</div>
-</div>
-<!-- phono -->
-
-<div class="mb-3 row">
-<label class="col-lg-4 col-form-label" for="validationCustom08">Alternative phone (India)
-<span class="text-danger">*</span>
-</label>
-<div class="col-lg-6">
-<input type="text" class="form-control" id="validationCustom08" placeholder="+91" required>
-<div class="invalid-feedback">
-Please enter a phone no.
-</div>
-</div>
-</div>
-
-<!--  alter phn email-->
-<div class="mb-3 row">
-<label class="col-lg-4 col-form-label" for="validationCustom09">Address <span
-class="text-danger">*</span>
-</label>
-<div class="col-lg-6">
-<input type="text" class="form-control" id="validationCustom09"  placeholder="Address" required>
-<div class="invalid-feedback">
-Please enter a address.
-</div>
-</div>
-</div>
-<div class="mb-3 row">
-<label class="col-lg-4 col-form-label" for="validationCustom10">Zipcode <span
-class="text-danger">*</span>
-</label>
-<div class="col-lg-6">
-<input type="text" class="form-control" id="validationCustom10" placeholder="zipcode" required>
-<div class="invalid-feedback">
-Please enter a zipcode.
-</div>
-</div>
-</div>
-<!-- address  state city coutry -->
-
-<!-- <div class="col-xl-6"> -->
-<!-- coutry -->
-<div class="mb-3 row">
-<label class="col-lg-4 col-form-label" for="validationCustom05">Country
-<span class="text-danger">*</span>
-</label>
-<div class="col-lg-6">
-<select class="default-select wide form-control" id="validationCustom05">
-<option  data-display="Select">Please select</option>
-<option value="Private limited company">India </option>
-<option value="Public limited company">US</option> 
-</select>
-<div class="invalid-feedback">
-Please select a one.
-</div>
-</div>
-</div>
-<!-- city -->
-<div class="mb-3 row">
-<label class="col-lg-4 col-form-label" for="validationCustom05">State
-<span class="text-danger">*</span>
-</label>
-<div class="col-lg-6">
-<select class="default-select wide form-control" id="validationCustom05">
-<option  data-display="Select">Please select</option>
-<option value="Private limited company">Telangana </option>
-<option value="Public limited company">AP</option> 
-</select>
-<div class="invalid-feedback">
-Please select a one.
-</div>
-</div>
-</div>
-<!-- city -->
-<div class="mb-3 row">
-<label class="col-lg-4 col-form-label" for="validationCustom05">City
-<span class="text-danger">*</span>
-</label>
-<div class="col-lg-6">
-<select class="default-select wide form-control" id="validationCustom05">
-<option  data-display="Select">Please select</option>
-<option value="Private limited company">Hyderabad </option>
-<option value="Public limited company">Warangal</option> 
-</select>
-<div class="invalid-feedback">
-Please select a one.
-</div>
-</div>
-</div> 
-<div class="mb-3 row">
-<label class="col-lg-4 col-form-label"><a
-href="javascript:void()">Terms &amp; Conditions</a> <span
-class="text-danger">*</span>
-</label>
-<div class="col-lg-8">
-<div class="form-check">
-<input class="form-check-input" type="checkbox" value="" id="validationCustom12" required>
-<label class="form-check-label" for="validationCustom12">
-Agree to terms and conditions
-</label>
-</div>
-</div>
-</div>
-<div class="mb-3 row">
-<div class="col-lg-8 ms-auto">
-<button type="submit" class="btn btn-primary">Submit</button>
-</div>
-</div>
-</div>
-</div>
-</form>
-</div>
-</div>
-</div>
-</div> 
-
-<!--**********************************
-Scripts
-***********************************-->
-<!-- Required vendors -->
-<script src="./vendor/global/global.min.js"></script>
-
-<script src="vendor/jquery-nice-select/js/jquery.nice-select.min.js"></script>
-
-<script src="./js/custom.min.js"></script>
-<script src="./js/dlabnav-init.js"></script>
-<script src="./js/demo.js"></script>
-<script src="./js/styleSwitcher.js"></script>
-<script>
-(function () {
-'use strict'
-
-// Fetch all the forms we want to apply custom Bootstrap validation styles to
-var forms = document.querySelectorAll('.needs-validation')
-
-// Loop over them and prevent submission
-Array.prototype.slice.call(forms)
-.forEach(function (form) {
-form.addEventListener('submit', function (event) {
-if (!form.checkValidity()) {
-event.preventDefault()
-event.stopPropagation()
-}
-
-form.classList.add('was-validated')
-}, false)
-})
-})()
-</script>
 </section>
 
 </body>

@@ -95,10 +95,10 @@ public class MainController {
 		public String vendorRegistration() {
 			return "vendor-registration";
 		}
-	@GetMapping("/vendorcreation")
-	public String vendorCreation() {
-		return "vendor-creation";
-	}
+		/*
+		 * @GetMapping("/vendorcreation") public String vendorCreation() { return
+		 * "vendor-creation"; }
+		 */
 
 	// vendor profile view
 	@GetMapping("/vendorprofile")
