@@ -33,11 +33,6 @@ public class MainController {
 		return "application-page";
 	}
 
-	@GetMapping("/profile")
-	public String profile() {
-		return "my-profile";
-	}
-
 	@GetMapping("/statistics")
 	public String statistics() {
 		return "statistics-page";
@@ -74,16 +69,6 @@ public class MainController {
 	@GetMapping("/jobview")
 	public String jobview() {
 		return "job-view";
-	}
-
-	@GetMapping("/jobapplication")
-	public String job_application() {
-		return "job-application";
-	}
-
-	@GetMapping("/applyjob")
-	public String apply_job() {
-		return "apply-job";
 	}
 
 	
