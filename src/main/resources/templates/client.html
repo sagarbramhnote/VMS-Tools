@@ -45,17 +45,29 @@
 										  <input type="textbox" class="form-control solid" placeholder="Enter Address" aria-label="name" required>
 									  </div>
 									<div class="col-xl-6  col-md-6 mb-4">
-									  <label  class="form-label font-w600">Countryid<span class="text-danger scale5 ms-2">*</span></label>
-										<input type="number" class="form-control solid" placeholder="Enter Countryid" aria-label="name">
-									</div>
+									  <label  class="form-label font-w600">Country<span class="text-danger scale5 ms-2">*</span></label>
+										<select  class="form-select form-control solid" name=country required >
+									      <option selected>Please select</option>
+									      <option value="india">India</option>
+									      <option value="us">US</option>
+									   </select>
+						         	</div>
 									<div class="col-xl-6  col-md-6 mb-4">
-										<label  class="form-label font-w600">Stateid<span class="text-danger scale5 ms-2">*</span></label>
-										  <input type="number" class="form-control solid" placeholder="Enter Stateid" aria-label="name">
-									  </div>
+										<label  class="form-label font-w600">State<span class="text-danger scale5 ms-2">*</span></label>
+										 <select  class="form-select form-control solid" name="state" required >
+									       <option selected>Please select</option>
+									       <option value="TS">Telangana</option>
+									       <option value="Ap">Andhra Pradesh</option>
+								         </select>
+							        </div>
 									  <div class="col-xl-6  col-md-6 mb-4">
-										<label  class="form-label font-w600">Cityid<span class="text-danger scale5 ms-2">*</span></label>
-										  <input type="number" class="form-control solid" placeholder="Enter Cityid" aria-label="name">
-									  </div>
+										<label  class="form-label font-w600">City<span class="text-danger scale5 ms-2">*</span></label>
+										 <select  class="form-select form-control solid" name="city" required >
+									         <option selected>Please select</option>
+									         <option value="hyd">Hyderabad</option>
+									         <option value="wgl">Nellore</option> 
+								        </select>
+							          </div>		
 									  <div class="col-xl-6  col-md-6 mb-4">
 										<label  class="form-label font-w600">Website<span class="text-danger scale5 ms-2">*</span></label>
 										  <input type="url" class="form-control solid" placeholder="website url" aria-label="name">
