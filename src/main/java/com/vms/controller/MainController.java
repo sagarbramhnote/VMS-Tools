@@ -51,14 +51,14 @@ public class MainController {
 	}
 
 	
-	@GetMapping("/newperson")
+	@GetMapping("/newcandidate")
 	public String newPerson() {
-		return "newperson";
+		return "newcandidate";
 	}
 	
-	@GetMapping("/persontable")
+	@GetMapping("/candidatetable")
 	public String personTable() {
-		return "persontable";
+		return "candidatetable";
 	}
 	
 	@GetMapping("/joblist")
