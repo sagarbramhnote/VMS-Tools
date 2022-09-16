@@ -33,10 +33,6 @@ public class MainController {
 		return "application-page";
 	}
 
-	@GetMapping("/statistics")
-	public String statistics() {
-		return "statistics-page";
-	}
 
 	@GetMapping("/companies")
 	public String companies() {
