@@ -33,10 +33,6 @@ public class MainController {
 		return "application-page";
 	}
 
-	@GetMapping("/statistics")
-	public String statistics() {
-		return "statistics-page";
-	}
 
 	@GetMapping("/companies")
 	public String companies() {
@@ -51,14 +47,14 @@ public class MainController {
 	}
 
 	
-	@GetMapping("/newperson")
+	@GetMapping("/newcandidate")
 	public String newPerson() {
-		return "newperson";
+		return "newcandidate";
 	}
 	
-	@GetMapping("/persontable")
+	@GetMapping("/candidatetable")
 	public String personTable() {
-		return "persontable";
+		return "candidatetable";
 	}
 	
 	@GetMapping("/joblist")
