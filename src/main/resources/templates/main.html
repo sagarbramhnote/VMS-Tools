@@ -165,9 +165,13 @@ Sidebar start
 <!-- Client Creation -->
 <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
 <i class="flaticon-093-waving"></i>
-<span class="nav-text">Client creation</span>
+<span class="nav-text">Client</span>
 </a>
 <ul aria-expanded="false">
+
+<li><a href="#" th:href="@{/client}">New Client</a></li>
+<li><a href="#" th:href="@{/clientTable}">Client List</a></li>
+
 <li><a href="#" th:href="@{/client}">Client</a></li>
 <li><a href="#" th:href="@{/clientTable}">Client Table</a></li>
 </ul>
@@ -225,6 +229,7 @@ Scripts
 <script src="./js/custom.min.js"></script>
 <script src="./js/dlabnav-init.js"></script>
 <script src="./js/demo.js"></script>
+
 <script>
 function JobickCarousel() {
 
