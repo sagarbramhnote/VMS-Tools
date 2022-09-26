@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="main::Layout(~{::section})">
 <head>
 <meta charset="ISO-8859-1">
-<title>New Person</title>
+<title>New Candidate</title>
 
 </head>
 <body>
@@ -16,7 +16,7 @@
             <!-- row -->
 			<div class="container-fluid">
 				<div class="d-flex align-items-center mb-4">
-					<h4 class="fs-20 font-w600 mb-0 me-auto">New Person</h4>
+					<h4 class="fs-20 font-w600 mb-0 me-auto">New Candidate</h4>
 					<!-- <div>
 						<a href="javascript:void(0);" class="btn btn-secondary btn-sm me-3"> <i class="fas fa-envelope"></i></a>
 						<a href="javascript:void(0);" class="btn btn-secondary btn-sm me-3"><i class="fas fa-phone-alt"></i></a>
@@ -30,8 +30,12 @@
 							<div class="card-body">
 								<div class="row">
 									<div class="col-xl-6  col-md-6 mb-4">
-									  <label  class="form-label font-w600">Full Name<span class="text-danger scale5 ms-2">*</span></label>
-										<input type="text" class="form-control solid" placeholder="Full Name" aria-label="name" name="personName" required>
+									  <label  class="form-label font-w600">First Name<span class="text-danger scale5 ms-2">*</span></label>
+										<input type="text" class="form-control solid" placeholder="First Name" aria-label="name" name="personName" required>
+									</div>
+									<div class="col-xl-6  col-md-6 mb-4">
+									  <label  class="form-label font-w600">Last Name<span class="text-danger scale5 ms-2">*</span></label>
+										<input type="text" class="form-control solid" placeholder="Last Name" aria-label="name" name="personName" required>
 									</div>
 									<div class="col-xl-6  col-md-6 mb-4">
 									  <label  class="form-label font-w600">Email<span class="text-danger scale5 ms-2">*</span></label>
@@ -51,46 +55,47 @@
 										<input type="text" class="form-control solid" placeholder="Address" aria-label="name" required>
 									</div>
 									<div class="col-xl-6  col-md-6 mb-4">
-										<label  class="form-label font-w600">Select Experience<span class="text-danger scale5 ms-2"></span></label>
-										<div class="input-group">
-											 <div class="input-group-text"><i class="far fa-clock"></i></div>
-											<input  type="number"   class="form-control solid" placeholder="experience" max="30" >
-										</div>
-									</div>
-									<div class="col-xl-6  col-md-6 mb-4">
-										<label  class="form-label font-w600">Select Gender:<span class="text-danger scale5 ms-2"></span></label>
+										<label  class="form-label font-w600">Experience<span class="text-danger scale5 ms-2">*</span></label>
 										<select  class="form-select form-control solid">
-										  <option selected>Choose...</option>
-										  <option value="male">Male</option>
-										   <option value="female">Female</option>
-										</select>
-									</div>
-									<div class="col-xl-6  col-md-6 mb-4">
-										<label  class="form-label font-w600">Status<span class="text-danger scale5 ms-2"></span></label>
-										<select  class="form-select form-control solid">
-										  <option selected>Choose...</option>
-										  <option value="Active">Active</option>
-										   <option value="Inactive">Inactive</option>
+										<option selected>--Select Experience--</option>
+										<option>Below 1 Yr</option>
+										  <option>1 yr</option>
+										  <option>2 Yr</option>
+										   <option>3 Yr</option>
+										    <option>4 Yr</option>
+										    <option>Above 4 Yr</option>
 										</select>
 									</div>
 									<div class="col-xl-6  col-md-6 mb-4">
 									  <label  class="form-label font-w600">Upload Photo<span class="text-danger scale5 ms-2"></span></label>
 										<input type="file" class="form-control solid" placeholder="Upload Photo" aria-label="name" name="photo">
 									</div>
-								</div>
-							</div>
-							<div class="card-footer text-end">
+									<div class="col-xl-6  col-md-6 mb-4">
+									  <label  class="form-label font-w600">Upload Resume<span class="text-danger scale5 ms-2"></span></label>
+										<input type="file" class="form-control solid" placeholder="Upload Resume" aria-label="name" name="resume">
+									</div>
+									<div class="col-xl-6  col-md-6 mb-4">
+									 <span>Gender:<label class="radio-inline mx-3"><input type="radio" name="optradio" required>Male</label></span>
+										<span><label class="radio-inline me-3"><input type="radio" name="optradio" required>Female</label></span>
+									</div>		
+									  <div class="col-xl-6  col-md-6 mb-4">
+									    <span>Status:<label class="radio-inline mx-3"><input type="radio" name="optradio" required> Active</label></span>
+										<span><label class="radio-inline me-3"><input type="radio" name="optradio" required> In Active</label></span>
+									</div>
+								    </div>
+							 <div class="text-center">
 								<div>
-									<a href="javascript:void(0);" class="btn btn-primary me-3">Close</a>
-									<a th:href="@{/candidatetable}" class="btn btn-secondary">Submit</a>
+									<a href="#" class="btn btn-secondary">Submit</a>
+									<a href="#" class="btn btn-primary me-3">Close</a>
+								</div> 
 								</div>
-							</div>
+						</div>
 						</div>
 					</div>
 				</div>
             </div>
         </div>
- 
+    </div>
 </section>
 
 </body>
