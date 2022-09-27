@@ -72,9 +72,9 @@ public class MainController {
 	
 
 		//vendorregistration
-		@GetMapping("/vendorregistration")
+		@GetMapping("/newvendor")
 		public String vendorRegistration() {
-			return "vendor-registration";
+			return "new-vendor";
 		}
 		/*
 		 * @GetMapping("/vendorcreation") public String vendorCreation() { return
@@ -88,9 +88,9 @@ public class MainController {
 	}
 
 	// vendor tables
-	@GetMapping("/vendortables")
+	@GetMapping("/vendorlist")
 	public String vendortables() {
-		return "vendor-tables";
+		return "vendor-list";
 	}
 	
 

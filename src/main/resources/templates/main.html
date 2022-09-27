@@ -17,12 +17,6 @@
 <!-- PAGE TITLE HERE -->
 <title>VMS</title>
 
-<!-- FAVICONS ICON -->
-<!--  <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
-<link href="./vendor/jquery-nice-select/css/nice-select.css" rel="stylesheet">
-<link href="./vendor/owl-carousel/owl.carousel.css" rel="stylesheet">-->
-
-<!-- Style css -->
 <link href="./css/style.css" rel="stylesheet">
 
 </head>
@@ -124,6 +118,7 @@ Sidebar start
 <div class="dlabnav-scroll">
 
 <ul class="metismenu" id="menu">
+
 <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
 <i class="flaticon-025-dashboard"></i>
 <span class="nav-text">Dashboard</span>
@@ -133,12 +128,11 @@ Sidebar start
 <li><a href="#" th:href="@{/application}">Application</a></li>
 <li><a href="#" th:href="@{/companies}">Companies</a></li>
 </ul>
-
 </li>
 
 <!-- job posting -->
 <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
-<i class="flaticon-093-waving"></i>
+<i class="flaticon-022-copy"></i>
 <span class="nav-text">Job Posting</span></a>
 <ul aria-expanded="false">
 <li><a href="#" th:href="@{/joblist}">Job Lists</a></li>
@@ -150,13 +144,13 @@ Sidebar start
 
 <!-- vendor statrs -->
 <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
-<i class="flaticon-093-waving"></i>
+<i class="flaticon-049-home"></i>
 <span class="nav-text">Vendor</span>
 </a>
  <ul aria-expanded="false">  
- <li><a href="#" th:href="@{/vendorregistration}">Vendor Registration</a></li>
+ <li><a href="#" th:href="@{/newvendor}">New Vendor</a></li>
  <li><a href="#" th:href="@{/vendorprofile}">Vendor Profile</a></li>
-<li><a href="#" th:href="@{/vendortables}">Vendor Table</a></li>
+<li><a href="#" th:href="@{/vendorlist}">Vendor List</a></li>
  </ul>  
 </li>
 <!--  vendor ends-->
@@ -164,7 +158,7 @@ Sidebar start
 
 <!-- Client Creation -->
 <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
-<i class="flaticon-093-waving"></i>
+<i class="flaticon-068-plus"></i>
 <span class="nav-text">Client</span>
 </a>
 <ul aria-expanded="false">
@@ -177,6 +171,7 @@ Sidebar start
 
 <!--  Talent Bench  -->
 <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
+
 <i class="flaticon-093-waving"></i>
 <span class="nav-text">Candidate</span>
 </a>
@@ -184,6 +179,7 @@ Sidebar start
 <li><a th:href="@{/newcandidate}">New Candidate</a></li>
 <li><a th:href="@{/candidatetable}">Candidate List</a></li>
 <!--  <li><a href="job-application.html">Job Application</a></li> -->
+
 </ul>
 </li>
 
@@ -210,69 +206,11 @@ Scripts
 <script src="./vendor/global/global.min.js"></script>
 <script src="./vendor/chart.js/Chart.bundle.min.js"></script>
 
-<!-- Apex Chart -->
-<script src="./vendor/apexchart/apexchart.js"></script>
 
-<script src="./vendor/chart.js/Chart.bundle.min.js"></script>
-
-<!-- Chart piety plugin files -->
-<script src="./vendor/peity/jquery.peity.min.js"></script>
-
-<!-- Dashboard 1 -->
-<script src="./js/dashboard/dashboard-1.js"></script>
-
-<script src="./vendor/owl-carousel/owl.carousel.js"></script>
 
 <script src="./js/custom.min.js"></script>
 <script src="./js/dlabnav-init.js"></script>
 <script src="./js/demo.js"></script>
 
-<script>
-function JobickCarousel() {
-
-/*  testimonial one function by = owl.carousel.js */
-jQuery('.front-view-slider').owlCarousel({
-loop: false,
-margin: 30,
-nav: true,
-autoplaySpeed: 3000,
-navSpeed: 3000,
-autoWidth: true,
-paginationSpeed: 3000,
-slideSpeed: 3000,
-smartSpeed: 3000,
-autoplay: false,
-animateOut: 'fadeOut',
-dots: true,
-navText: ['', ''],
-responsive: {
-0: {
-items: 1
-},
-
-480: {
-items: 1
-},
-
-767: {
-items: 3
-},
-1750: {
-items: 3
-}
-}
-})
-}
-
-jQuery(window).on('load', function() {
-setTimeout(function() {
-JobickCarousel();
-}, 1000);
-});
-</script>
-
-
-
 </body>
-
 </html>
